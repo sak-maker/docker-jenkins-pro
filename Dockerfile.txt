@@ -9,7 +9,7 @@ RUN rm -rf index.nginx-debian.html
 
 COPY index.html /var/www/html/
 COPY index.html /usr/share/nginx/html/
-RUN Service nginx start
+RUN service nginx start
 
 CMD ["nginx","-g","daemon off;"] 
 
